@@ -27,9 +27,8 @@ For TFT, you need to add TFT first to your wallet, adding also a trustline. <br/
 For the first time, a manual setup is needed. 
 Asset code = TFT (capital letters)
 Asset issuer = the issuer of the token on the Stellar Network, this is a fixed string (always the same). 
-On testnet, issuer of TFT = GA47YZA3PKFUZMPLQ3B5F2E3CJIB57TGGU7SPCQT2WAEYKN766PWIMB3
-(please keep in mind that Stellar testnet is reset every quarter ) 
-On mainnet, issuer of TFT = GBOVQKJYHXRR3DX6NOX2RRYFRCUMSADGDESTDNBDS6CDVLGVESRTAC47
+Issuer of TFT = GBOVQKJYHXRR3DX6NOX2RRYFRCUMSADGDESTDNBDS6CDVLGVESRTAC47
+
 Stellar works with trustlines (establishment of it costs a very small amount of XLMs). This trustline needs to be established as well. 
 
 For trading you need to define both the currencies and the issuer: 
