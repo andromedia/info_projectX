@@ -10,13 +10,14 @@ For your info, on testnet you get a number of XLMs for free which you can claim 
 We provide you also with 1000 FreeTFTs per 3bot, which can be used to start exploring our grid and pay for the capacity. 
 Once you have tokens available, you can start trading : 
 
-<img src="images/overview_stellar_wallet_TFT.png" width=400 align=left> <br>
+<img src="images/overview_stellar_wallet_TFT.png"> <br/><br/>
 
-For TFT, you need to add TFT first to your wallet, adding also a trustline. <br>
 
-<img src="images/button_add_token.png" width=200 align=left>  <br>
+For TFT, you need to add TFT first to your wallet, adding also a trustline. <br/><br/>
 
-<img src="images/button_trust_asset.png" width=200 align=left> <br>
+<img src="images/button_add_token.png" width=200 align=left>  <br/><br/>
+
+<img src="images/button_trust_asset.png" width=200 align=left> <br/><br/>
 
 
 For the first time, a manual setup is needed. 
@@ -29,6 +30,8 @@ Stellar works with trustlines (establishment of it costs a very small amount of 
 
 For trading you need to define both the currencies and the issuer: 
 
+<img src="images/trade_TFT_XLM.png">  <br/><br/>
+
 For the first time, a manual setup is needed. 2 parameters need to be defined : 
 ‘Asset code’ is the token identifier, in our case TFT (capital letters)
 Asset issuer is the issuer of the token on the Stellar Network, this is a fixed string (always the same). 
@@ -36,7 +39,8 @@ On testnet, issuer = GA47YZA3PKFUZMPLQ3B5F2E3CJIB57TGGU7SPCQT2WAEYKN766PWIMB3
 (please keep in mind that Stellar testnet is reset every quarter ) 
 On mainnet, issuer (of TFT) = GBOVQKJYHXRR3DX6NOX2RRYFRCUMSADGDESTDNBDS6CDVLGVESRTAC47
 
+<img src="images/define_TFT_asset.png" width=300 align=left> 
+
 Once 2 currencies have been selected, you can start trading. 
 
-How to exchange TFTs and exchange them with other cryptocurrencies. 
-
+<img src="images/orderbook_TFT_XLM.png" align=left> 
