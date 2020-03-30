@@ -10,6 +10,8 @@ For your info, on testnet you get a number of XLMs for free which you can claim 
 We provide you also with 1000 FreeTFTs per 3bot, which can be used to start exploring our grid and pay for the capacity. 
 Once you have tokens available, you can start trading : 
 
+![overview_stellar_wallet_TFT](images/overview_stellar_wallet_TFT.png | width=100)
+
 For TFT, you need to add TFT first to your wallet, adding also a trustline.
 
 For the first time, a manual setup is needed. 
