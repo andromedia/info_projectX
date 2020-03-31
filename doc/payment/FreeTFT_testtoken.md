@@ -1,8 +1,9 @@
-## How to get FreeTFT, to be used for exploring the grid
+## FreeTFT, the token to freely explore the Threefold network
 
-A setup has been made so that each 3Bot gets 1000 FreeTFTs for consumption of our test network. 
+A token has been created that allows you to explore the grid. 
+A setup has been made so that each 3Bot gets once 1000 FreeTFTs for consumption of our network. 
 
-As TFTs are registered on the Stellar network, XLMs are needed to allow transfers and setting up of accounts. 
+As FreeTFT, like TFT, is registered on the Stellar network, XLMs are needed to set up an account allow transfers and setting up of accounts. 
 This can be done in a transparent way in the 3Bot connect wallet. However, this is still work in progress, that is why we propose an alternative using another wallet. 
 Here you can find how to start trading FreeTFT on the Stellar network anyway. 
 
@@ -33,3 +34,16 @@ Asset issuer = the issuer of the token on the Stellar Network, this is a fixed s
 Issuer of FreeTFT = GCBGS5TFE2BPPUVY55ZPEMWWGR6CLQ7T6P46SOFGHXEBJ34MSP6HVEUT
 
 Stellar works with trustlines (establishment of it costs a very small amount of XLMs). This trustline needs to be established as well. 
+
+### Setup of FreeTFT in Lobstr wallet
+
+An example of a setup in a mobile wallet: 
+
+- Create your wallet and buy XLMs (to refund your 1.5 XLM, but also setup of each new account requires about 2.6 XLM)
+- Select 'Assets'
+- Select 'More Assets'
+- Select 'Add custom'
+- Enter domain name www.threefold.io
+- Add FreeTFT
+
+
