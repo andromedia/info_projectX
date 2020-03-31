@@ -14,7 +14,7 @@ TFTs can be obtained in different ways:
 
 As TFTs are registered on the Stellar network, there is a minimal amount of XLMs needed to do transfers and setting up of TFT accounts. For users of the 3Bot Connect app, the XLM usage is hidden from the user and cost is covered by the transfer fees and the sms service helps to protect against abuse of this service. 
 Of course, also other Stellar wallets can be used to transfer TFTs, but these need to provide in self-funding for XLM. 
-Below you can find how to configure a web wallet and a mobile wallet to do trading TFT on the Stellar network. 
+In the instruction on FreeTFT you can find how to configure a web wallet and a mobile wallet to do trading TFT on the Stellar network. 
 
 ### Use TFT and FreeTFT for capacity reservation 
 
@@ -22,48 +22,3 @@ Capacity reservation of the grid is done by sending TFTs (or FreeTFTs) from user
 The payment flow is integrated in the reservation process : 
 
 - Chatflow : After reservation attempt is successful, a QR code will be shown that holds the address of one or more farmers, indicating also the amount of tokens that is needed to fulfil the transfer. 
-
-
-### Setup of a TFT wallet on Stellar Network <> 3Bot Connect App
-
-A web wallet, able to do trading with other cryptocurrencies, is available on [the web wallet](https://interstellar.exchange/) . 
-Alternatively there are a number of wallets available on the market that can be used. 
-An overview of possible wallets can be found [here](https://themoneymongers.com/best-stellar-xlm-wallets/) .
-
-Trading TFTs is only possible after first buying a number of XLMs as these are needed to set up your account and create a trustline to your TFT wallet. 
-
-For the grid exploration setup, 1000 FreeTFTs will be provided per 3bot, which can be used to start exploring the Threefold Network and to pay for the capacity. 
-
-Once you have tokens available, you can start trading : 
-
-<img src="images/overview_stellar_wallet_TFT.png"> <br/><br/>
-
-For TFT, you need to add TFT first to your wallet, adding also a trustline. <br/><br/>
-
-<img src="images/button_add_token.png" width=200 align=left>  <br/><br/>
-
-<img src="images/button_trust_asset.png" width=200 align=left> <br/><br/>
-
-
-For the first time, a manual setup is needed. 
-Asset code = TFT (capital letters)
-Asset issuer = the issuer of the token on the Stellar Network, this is a fixed string (always the same). 
-Issuer of TFT = GBOVQKJYHXRR3DX6NOX2RRYFRCUMSADGDESTDNBDS6CDVLGVESRTAC47
-
-Stellar works with trustlines (establishment of it costs a very small amount of XLMs). This trustline needs to be established as well. 
-
-For trading you need to define both the currencies and the issuer: 
-
-<img src="images/trade_TFT_XLM.png">  <br/><br/>
-
-For the first time, a manual setup is needed. 2 parameters need to be defined : 
-‘Asset code’ is the token identifier, in our case TFT (capital letters)
-Asset issuer is the issuer of the token on the Stellar Network, this is a fixed string (always the same). 
-
-On mainnet, issuer of both TFT and FreeTFT  = GBOVQKJYHXRR3DX6NOX2RRYFRCUMSADGDESTDNBDS6CDVLGVESRTAC47
-
-<img src="images/define_TFT_asset.png" width=300 align=left> 
-
-Once 2 currencies have been selected, you can start trading. 
-
-<img src="images/orderbook_TFT_XLM.png" align=left> 
