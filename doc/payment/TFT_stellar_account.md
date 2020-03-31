@@ -1,8 +1,18 @@
-## How to set up your TFT account for usage of the Threefold Network
+## The use of TFT in capacity reservation on the Threefold Network
 
-A setup has been made so that each 3Bot gets 1000 FreeTFTs for consumption of our test network. 
+TFT is the money used to reserve capacity on the Threefold Network. 
 
-As TFTs are registered on the Stellar network, XLMs are needed to allow transfers and setting up of accounts. 
+### Buy TFT
+
+TFTs can be obtained in different ways: 
+
+- As of xx/xx/2020, TFT will be quoted on different exchanges. Liquid is a centralized exchange that already has been announced, there will be a few more exchanges that will allow trading of TFT at the same time. 
+- Next to that, the Stellar decentralized exchange allow exchanging of TFTs with other cryptocurrencies. For more info, see the setup below. 
+- Farmers earn tokens on a monthly base as a reward for keeping their capacity up and running. Farming is a subject that is very large, all info around this can be found in the relevant wiki page on the website. 
+
+### Use TFT
+
+As TFTs are registered on the Stellar network, there is a minimal amount of XLMs needed to do transfers and setting up of TFT accounts. 
 Showing XLM in the 3Bot Connect wallet is planned but not yet implemented. 
 Here you can find how to start trading FreeTFT and TFT on the Stellar network anyway. 
 
