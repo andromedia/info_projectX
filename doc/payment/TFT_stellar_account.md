@@ -10,13 +10,18 @@ TFTs can be obtained in different ways:
 - Next to that, the Stellar decentralized exchange allow exchanging of TFTs with other cryptocurrencies. For more info, see the setup below. 
 - Farmers earn tokens on a monthly base as a reward for keeping their capacity up and running. Farming is a subject that is very large, all info around this can be found in the relevant wiki page on the website. 
 
-### Use TFT and FreeTFTs
+### Transfer of TFT and FreeTFT
 
 As TFTs are registered on the Stellar network, there is a minimal amount of XLMs needed to do transfers and setting up of TFT accounts. For users of the 3Bot Connect app, the XLM usage is hidden from the user and cost is covered by the transfer fees and the sms service helps to protect against abuse of this service. 
 Of course, also other Stellar wallets can be used to transfer TFTs, but these need to provide in self-funding for XLM. 
 Below you can find how to configure a web wallet and a mobile wallet to do trading TFT on the Stellar network. 
 
+### Use TFT and FreeTFT for capacity reservation 
+
 Capacity reservation of the grid is done by sending TFTs (or FreeTFTs) from user to farmer. 
+The payment flow is integrated in the reservation process : 
+
+- Chatflow : After reservation attempt is successful, a QR code will be shown that holds the address of one or more farmers, indicating also the amount of tokens that is needed to fulfil the transfer. 
 
 
 ### Setup of a TFT wallet on Stellar Network <> 3Bot Connect App
