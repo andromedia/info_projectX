@@ -10,14 +10,20 @@ TFTs can be obtained in different ways:
 - Next to that, the Stellar decentralized exchange allow exchanging of TFTs with other cryptocurrencies. For more info, see the setup below. 
 - Farmers earn tokens on a monthly base as a reward for keeping their capacity up and running. Farming is a subject that is very large, all info around this can be found in the relevant wiki page on the website. 
 
-### Use TFT
+### Use TFT and FreeTFTs
 
-As TFTs are registered on the Stellar network, there is a minimal amount of XLMs needed to do transfers and setting up of TFT accounts. 
-Showing XLM in the 3Bot Connect wallet is planned but not yet implemented. 
-Here you can find how to start trading FreeTFT and TFT on the Stellar network anyway. 
+As TFTs are registered on the Stellar network, there is a minimal amount of XLMs needed to do transfers and setting up of TFT accounts. For users of the 3Bot Connect app, the XLM usage is hidden from the user and cost is covered by the transfer fees and the sms service helps to protect against abuse of this service. 
+Of course, also other Stellar wallets can be used to transfer TFTs, but these need to provide in self-funding for XLM. 
+Below you can find how to configure a web wallet and a mobile wallet to do trading TFT on the Stellar network. 
 
-First create a wallet. A web wallet, able to do trading with other cryptocurrencies, is available on [the web wallet](https://interstellar.exchange/) . Alternatively there are a number of wallets available on the market that can be used. 
-An overview of possible wallets can be found [here](https://themoneymongers.com/best-stellar-xlm-wallets/) 
+Capacity reservation of the grid is done by sending TFTs (or FreeTFTs) from user to farmer. 
+
+
+### Setup of a TFT wallet on Stellar Network <> 3Bot Connect App
+
+A web wallet, able to do trading with other cryptocurrencies, is available on [the web wallet](https://interstellar.exchange/) . 
+Alternatively there are a number of wallets available on the market that can be used. 
+An overview of possible wallets can be found [here](https://themoneymongers.com/best-stellar-xlm-wallets/) .
 
 Trading TFTs is only possible after first buying a number of XLMs as these are needed to set up your account and create a trustline to your TFT wallet. 
 
