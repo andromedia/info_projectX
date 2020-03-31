@@ -3,7 +3,7 @@
 A setup has been made so that each 3Bot gets 1000 FreeTFTs for consumption of our test network. 
 
 As TFTs are registered on the Stellar network, XLMs are needed to allow transfers and setting up of accounts. 
-Showing XLM in the 3Bot Connect wallet is planned but not yet implemented. 
+This can be done in a transparent way in the 3Bot connect wallet. However, this is still work in progress, that is why we propose an alternative using another wallet. 
 Here you can find how to start trading FreeTFT on the Stellar network anyway. 
 
 ### Setup of FreeTFT in interstellar wallet 
