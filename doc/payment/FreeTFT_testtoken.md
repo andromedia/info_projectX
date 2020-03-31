@@ -41,9 +41,13 @@ An example of a setup in a mobile wallet:
 
 - Create your wallet and buy XLMs (to refund your 1.5 XLM, but also setup of each new account requires about 2.6 XLM)
 - Select 'Assets'
+![lobstr4](images/lobstr4.jpeg) 
 - Select 'More Assets'
+![lobstr3](images/lobstr3.jpeg) 
 - Select 'Add custom'
+![lobstr2](images/lobstr2.jpeg) 
 - Enter domain name www.threefold.io
+![lobstr1](images/lobstr1.jpeg) 
 - Add FreeTFT
 
 
