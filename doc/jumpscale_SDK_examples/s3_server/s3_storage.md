@@ -154,9 +154,7 @@ time.sleep(5)
 results = zos.reservation_result(rid_zdb)
 ```
 
-
-```python
-If yo want to have a look at what is returned as results it will look similar to this
+If you want to have a look at what is returned as results it will look similar to this
 ```
 category = "ZDB"
     data_json = "{\n \"IP\": \"2a04:7700:1003:1:54f0:edff:fe87:2c48\",\n \"Namespace\": \"9012-4\",\n \"Port\": 9900\n}"
@@ -215,7 +213,6 @@ category = "ZDB"
     workload_id = "9012-6"
     
    ```
-```
 
 With the low level zero-DB reservations done and stored the `results` variable (these storage managers will get an IPv4 address assigned from the local `/24` node network.  We need to store those addresses in `namespace_config` to pass it to the container running the storage software.
 
@@ -236,7 +233,6 @@ print(namespace_config)
 ```
 
 ```
- JSX> namespace_config
 ['9012-4:supersecret@[2a04:7700:1003:1:54f0:edff:fe87:2c48]:9900', '9012-1:supersecret@[2a02:16a8:1000:0:5c2f:ddff:fe5a:1a70]:9900', '9012-2:supersecret@[2a02:16a8:1000:0:1083:59ff:fe38:ce71]:9900', '9012-7:supersecret@[2003:d6:2f32:8500:dc78:d6ff:fe04:7368]:9900', '9012-3:supersecret@[2a02:16a8:1000:0:fc7c:4aff:fec8:baf]:9900', '9012-5:supersecret@[2a04:7700:1003:1:acc0:2ff:fed3:1692]:9900', '9012-6:supersecret@[2a04:7700:1003:1:ac9d:f3ff:fe6a:47a9]:9900']
 ```
 
