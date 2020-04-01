@@ -17,6 +17,9 @@ First load you identity and make sure you are talking to the production explorer
 
 
 ```bash
+import time
+from Jumpscale import j
+
 # Which identities are available in you SDK
 j.tools.threebot.me
 
@@ -62,22 +65,23 @@ network = zos.network.create(r, ip_range=demo_ip_range, network_name=demo_networ
 nodes_salzburg = zos.nodes_finder.nodes_search(farm_id=12775) # (IPv6 nodes)
 nodes_vienna_1 = zos.nodes_finder.nodes_search(farm_id=82872) # (IPv6 nodes)
 nodes_belgium = zos.nodes_finder.nodes_search(farm_id=1) # (IPv4 nodes, to be used as ingress/egress point.  These are not webgatewaysm, just nodes connected to the internet with IPv4 addresses)
-nodes_munich = zos.nodes_finder.nodes_search(farm_id=50669) #(IPv6 nodes)
 
 # nodes_all = nodes_salzburg + nodes_vienna_1 + nodes_belgium + nodes_munich
-nodes_all = nodes_salzburg + nodes_vienna_1 + nodes_belgium + nodes_munich
+nodes_all = nodes_salzburg[:2] + nodes_vienna_1[:2] + nodes_belgium[:2]
 
 # make sure to set a new port
 for i, node in enumerate(nodes_all):
     if zos.nodes_finder.filter_is_up(node):
         iprange = f"172.20.{i+10}.0/24"
         zos.network.add_node(network, node.node_id , iprange, wg_port=demo_port)
-        print(node.node_id, ":", iprange)
+        print("Node number: ", i, node.node_id, ":", iprange)
     else:
         print("Node", node.node_id,"is not up")
 ```
 
-A handy function is available to create a wireguard configuration file to import to you local wireguard setup.
+Please store the list of nodes somewhere for you reference to deploy containers and architectures, or you can write code to store this to a file.  All nodes are connected with IPv6 to the internet.  If you have IPv6 at home you can create a wireguard configuration to any of the nodes as they all speak IPv6 and any node can act as you private gateway into your overlay network.  If you fo not have IPv6 at home you need to identify a nodes that has IPv4 capabilities.  In this example the nodes in Belgium have a dual stack and can therefore be used to provide an IPv4 gateway into your overlay network.
+
+Important step is to create a wireguard configuration (file) providing you with secure access to you private peer2peer overlay network.  Please copy / paste the  configuration into a file and import to you local wireguard setup.  At time of writing IPv4 was the only available stack and therefore this example has an IPv4 Wireguard configuration, based on one of the nodes in Belgium.  With IPv6 available you can select any of the nodes in your network and build a secure tunnel to those. 
 
 
 ```bash
@@ -89,13 +93,14 @@ print(wg_config)
 print("------------------------")
 ```
 
-Copy the wireguard configuration to you local host on which the 3bot SDK is running and bring the woreguard interface up.  Instructions to do this are [here](https://www.wireguard.com/quickstart/)
+Copy the wireguard configuration to your local host on which the Jumpscale SDK is running and bring the wireguard interface up.  Instructions to do this are [here](https://www.wireguard.com/quickstart/)
+
+Now that we have built a network reservation structure which includes on the nodes we want to use, here how to send this reservation to the grid.
+
 
 
 ```bash
 # Set the duration for the reservation
-import time
-
 # Reservation period set in seconds. Please adjust, this only allys for the network to exists for 60 minutes.
 reservation_period=(60*60)
 
@@ -116,4 +121,4 @@ print("provisioning result")
 print(result)
 ```
 
-This will provide you with an overlay network.  It is wise to do this once for the nodes that you wan to in your network and then do a reservation for a long period.  This will allow you to continue to work, deploy, optimise and configure all neccessary components for the work on the grid.  Obviously
+This will provide you with an overlay network.  It is wise to do this once for the nodes that you want in your network and then do a reservation for a long period.  This will allow you to continue to work, deploy, optimise and configure all neccessary components for the work on the grid.  Obviously
