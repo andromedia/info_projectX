@@ -5,10 +5,16 @@ Within the 3bot Admin console, a chatflow has been created to reserve capacity t
 Through this chatflow, the kubernetes cluster is reserved and configured simply by collection of a number of parameters : 
 - IPv4 vs. IPv6
 - Number of worker nodes
-- 
+- public ssh key (allowing to access the container using ssh)
+- cluster secret
+- network definition (choice between reuse of a netork that has been set up earlier or new one)
+- ip addresses to access all workers
 
 This information is sufficient to create the cluster.
 
-![kubernetes_chatflow11](images/kubernetes/Kubernetes_chatflow11.png)
+![kubernetes_chatflow11](images/kubernetes/kubernetes_chatflow11.png)
 
-The network might yet be set up, using Wireguard.
+If you choose to define a new network, this needs to be activated using Wireguard (see explanation on network).
+
+![kubernetes_chatflow12](images/kubernetes/kubernetes_chatflow12.png)
+![kubernetes_chatflow13](images/kubernetes/kubernetes_chatflow13.png)
