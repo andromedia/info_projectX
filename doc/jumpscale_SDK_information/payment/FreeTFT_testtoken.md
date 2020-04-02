@@ -19,7 +19,7 @@ For the grid exploration setup, 1000 FreeTFTs will be provided per 3bot, which c
 
 Once you have tokens available, you can start paying for capacity. 
 
-<img src="images/overview_stellar_wallet_TFT.png"> <br/><br/>
+<img src="images/Interstellar_testnet_overview.png"> <br/><br/>
 
 Add FreeTFT first to your wallet, adding also a trustline. <br/><br/>
 
@@ -46,8 +46,8 @@ An example of a setup in a mobile wallet:
 ![lobstr3](images/lobstr3.jpeg) 
 - Select 'Add custom'
 ![lobstr2](images/lobstr2.jpeg) 
-- Enter domain name www.threefold.io
-![lobstr1](images/lobstr1.jpeg) 
+- Enter domain name threefold.io
+![Lobstr_Assets_Selection](images/Lobstr_Assets_Selection.jpeg) 
 - Add FreeTFT
 
 
