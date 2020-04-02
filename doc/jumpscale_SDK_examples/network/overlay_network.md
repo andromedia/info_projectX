@@ -67,7 +67,7 @@ nodes_vienna_1 = zos.nodes_finder.nodes_search(farm_id=82872) # (IPv6 nodes)
 nodes_belgium = zos.nodes_finder.nodes_search(farm_id=1) # (IPv4 nodes, to be used as ingress/egress point.  These are not webgatewaysm, just nodes connected to the internet with IPv4 addresses)
 
 # nodes_all = nodes_salzburg + nodes_vienna_1 + nodes_belgium + nodes_munich
-nodes_all = nodes_salzburg[:2] + nodes_vienna_1[:2] + nodes_belgium[:2]
+nodes_all = nodes_salzburg[5:8] + nodes_vienna_1[5:8] + nodes_belgium[:2]
 
 # make sure to set a new port
 for i, node in enumerate(nodes_all):

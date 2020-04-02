@@ -20,7 +20,7 @@ The design a simple S3 archive solution we need to follow a few simple steps:
 
 #### Create overlay network of identity an previously deployed overlay network
 
-Each overlay network is private and contains private IP addresses.  Each overlay network is deployed in such a way that is has no connection to the public (IPv4 or IPv6) network directly.  In order to work with such a network a tunnel needs to be created between the overlay network on the grid and the private overlay network.  You can find instructions how to do that [here](https://github.com/threefoldfoundation/info_projectX/blob/development/doc/jumpscale_SDK_examples/network/overlay_network.md)
+Each overlay network is private and contains private IP addresses.  Each overlay network is deployed in such a way that is has no connection to the public (IPv4 or IPv6) network directly.  In order to work with such a network a tunnel needs to be created between the overlay network on the grid and your local network.  You can find instructions how to do that [here](https://github.com/threefoldfoundation/info_projectX/blob/development/doc/jumpscale_SDK_examples/network/overlay_network.md)
 
 
 #### Set up the capacity environment to find, reserve and configure
@@ -53,10 +53,11 @@ An overlay network creates a private peer2peer network over selected nodes.  In 
 
 You have created a network in the network creation [notebook](https://github.com/threefoldfoundation/info_projectX/blob/development/code/jupyter/SDK_examples/network/overlay_network.ipynb) with the following details:
 ```
-demo_ip_range="```72.20.0.0/16"
+demo_ip_range="72.20.0.0/16"
 demo_port=8030
 demo_network_name="demo_network_name_01"
 ```
+
 When you executed the reservation it also provided you with a data on order number, node ID and private network range on the node.  All the nodes in the network are connected peer2peer with a wireguard tunnel.  On these nodes we can now create a storage solution.  For this soultion we will using some of these nodes as raw storage provider nodes and others as the storage application nodes.  Using the ouput of the network reservation notebook to describe the high level design of the storage solution:
 
 | Nr.  |  Location | Node ID.   |  IPV4 network    | Function.  |
@@ -280,7 +281,12 @@ minio_container=zos.container.create(reservation=reservation_minio,
         "ACCESS_KEY":"minio",
         "SECRET_KEY":"passwordpassword",
         })
+```
 
+With the definition of the S3 container done we now need to attached persistent storage on a volume to store metadata.
+
+
+```python
 # ----------------------------------------------------------------------------------
 # Attach persistant storage to container - for storing metadata
 # ----------------------------------------------------------------------------------  
@@ -288,6 +294,12 @@ zos.volume.attach_existing(
     container=minio_container,
     volume_id=f'{volume_rid}-{volume.workload_id}',
     mount_point='/data')
+```
+
+Last but not least, execute the resevation for the storage manager.
+
+
+```python
 # ----------------------------------------------------------------------------------
 # Write reservation for min.io container in BCDB - end user interface
 # ----------------------------------------------------------------------------------      
