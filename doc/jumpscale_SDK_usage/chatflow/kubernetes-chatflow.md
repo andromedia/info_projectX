@@ -18,3 +18,8 @@ If you choose to define a new network, this needs to be activated using Wireguar
 
 ![kubernetes_chatflow12](images/kubernetes/kubernetes_chatflow12.png)
 ![kubernetes_chatflow13](images/kubernetes/kubernetes_chatflow13.png)
+
+Once this is done you can ssh into the virtual machine from your account that you used the ssh key from. 
+
+![kubernetes_chatflow14](images/kubernetes/kubernetes_chatflow14.png)
+![kubernetes_chatflow15](images/kubernetes/kubernetes_chatflow15.png)
