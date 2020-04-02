@@ -5,9 +5,9 @@ Jumpscale provides a very rich SDK to start developing use cases to be deployed 
 
 #### Use cases
 The currect set of use cases are:
-- [Create a virtual overlay network with secure access](./network/README.md)
-- [Deploy a container based on an flist](./flist/README.md)
-- [Deploy a S3 server with dispersed storage](./s3_server/README.md)
-- [Deploy a kubernetes cluster](./kubernetes_cluster/README.md)
+- [Create a virtual overlay network with secure access](./network/overlay_network.md)
+- [Deploy a container based on an flist](./flist/flist.md)
+- [Deploy a S3 server with dispersed storage](./s3_server/s3_storage.md)
+- [Deploy a kubernetes cluster](./kubernetes_cluster/kubernetes_cluster.md)
 
-#### Resources
+#### More resources of information
