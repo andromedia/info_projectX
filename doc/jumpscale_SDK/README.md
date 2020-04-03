@@ -11,60 +11,18 @@ The SDK installation process is documented in the `threefold` repository. The sp
 
 The 3bot admin panel is a versatile tool to administrate and control processes and activities of the jumpscale SDK.
 
-##### SDK dashboard
 
-[dashboard](./dashboard.md)
-
-##### SDK Wiki
-
-[wikis](./wikis.md)
-
-##### SDK Alerts
-
-
-[alerts](./alerts.md)
-
-##### SDK Logs
-
-[logs](./logs.md)
-
-##### SDK My Jobs
-
-[my_jobs](./my_jobs.md)
-
-
-##### Packages
-
-[packages](./packages.md)
-
-##### Solutions
-
-###### Ubuntu OS
-
-[ubuntu-chat](./ubuntu-chat.md)
-
-###### S3 Cluster
-
-[S3-cluster](./S3-cluster.md)
-
-###### Kubernetesd Cluster
-
-[kubernetes-chat](./kubernetes-chat.md)
-
-##### Farm Management
-
-[farm_management](./farm_management.md)
-
-##### Visual Studio CodeServer
-
-[codeserver](./codeserver.md)
-
-##### Jupyter Notebook
-
-[jupyter](./jupyter.md)
-
-#### Settings
-
-[settings](./setting.md)
+* [Dashboard](./tab_explanation/dashboard.md)
+* [Wikis](./tab_explanation/wikis.md)
+* [Alerts](./tab_explanation/alerts.md)
+* [Logs](./tab_explanation/logs.md)
+* [My jobs](./tab_explanation/my_jobs.md)
+* [Packages](./tab_explanation/packages.md)
+* [Solutions](./tab_explanation/solutions.md)
+* [farm_management](./tab_explanation/farm_management.md)
+* [SDK Examples](./tab_explanation/sdk_examples.md)
+* [Codeserver](./tab_explanation/codeserver.md)
+* [Jupyter](./tab_explanation/jupyter.md)
+* [Xettings](./tab_explanation/setting.md)
 
 
